@@ -76,29 +76,38 @@
                                     <action selector="updateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="udE-Mm-7WV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your name is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFP-gL-W5Q">
+                                <rect key="frame" x="0.0" y="215" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fXl-Dl-XLp">
+                                <rect key="frame" x="139" y="148" width="109" height="29"/>
+                                <segments>
+                                    <segment title="Purple"/>
+                                    <segment title="Blue"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlf-WP-GYw">
+                                <rect key="frame" x="0.0" y="151" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTR-hQ-22L">
-                                <rect key="frame" x="20" y="226" width="32" height="30"/>
+                                <rect key="frame" x="0.0" y="268" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="4oZ-Lc-cpg" kind="show" identifier="testSegue" id="tjA-Av-Avz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your name is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFP-gL-W5Q">
-                                <rect key="frame" x="20" y="154" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="eFP-gL-W5Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Pnh-ma-Rt3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eFP-gL-W5Q" secondAttribute="trailing" id="WV4-Wh-jTR"/>
-                            <constraint firstItem="eFP-gL-W5Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="wqx-yp-bau"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Name" id="93X-vw-75j"/>
                     <connections>
+                        <outlet property="optionSelector" destination="fXl-Dl-XLp" id="SU4-IG-gTo"/>
                         <outlet property="outputLabel" destination="eFP-gL-W5Q" id="0eW-21-nV4"/>
                         <outlet property="textField" destination="ZNd-Mg-NgC" id="2vd-dK-x2Y"/>
                     </connections>
