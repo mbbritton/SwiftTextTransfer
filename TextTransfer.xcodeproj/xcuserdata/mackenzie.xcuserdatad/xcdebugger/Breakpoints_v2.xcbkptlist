@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TextTransfer/ViewController.swift"
-            timestampString = "482103988.686375"
+            timestampString = "482105160.64171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "chooseColor()"
             landmarkType = "5">
          </BreakpointContent>

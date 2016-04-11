@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller Two-->
+        <!--How do you like this?-->
         <scene sceneID="5pk-CE-xYi">
             <objects>
                 <viewController id="4oZ-Lc-cpg" customClass="ViewControllerTwo" customModule="TextTransfer" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,13 +25,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.54104694459861324" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="RJN-1b-4BG" secondAttribute="trailing" id="1BF-gW-Gvc"/>
                             <constraint firstItem="RJN-1b-4BG" firstAttribute="top" secondItem="cl2-A8-qmj" secondAttribute="bottom" constant="40" id="SHN-tB-pzD"/>
                             <constraint firstItem="RJN-1b-4BG" firstAttribute="leading" secondItem="th7-3A-g0H" secondAttribute="leadingMargin" id="XjZ-7L-IeG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="How do you like this?" id="PNw-Ja-Jkr"/>
                     <connections>
                         <outlet property="nameLabel" destination="RJN-1b-4BG" id="j9P-hZ-4gK"/>
                     </connections>
@@ -40,7 +40,7 @@
             </objects>
             <point key="canvasLocation" x="1720" y="411"/>
         </scene>
-        <!--Name-->
+        <!--Hey! Who are you?-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextTransfer" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,26 +69,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVq-US-biJ">
-                                <rect key="frame" x="191" y="94" width="62" height="30"/>
-                                <state key="normal" title="Update"/>
-                                <connections>
-                                    <action selector="updateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="udE-Mm-7WV"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your name is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFP-gL-W5Q">
-                                <rect key="frame" x="0.0" y="215" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fXl-Dl-XLp">
-                                <rect key="frame" x="139" y="148" width="109" height="29"/>
-                                <segments>
-                                    <segment title="Purple"/>
-                                    <segment title="Blue"/>
-                                </segments>
-                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlf-WP-GYw">
                                 <rect key="frame" x="0.0" y="151" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -96,19 +76,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTR-hQ-22L">
-                                <rect key="frame" x="0.0" y="268" width="32" height="30"/>
+                                <rect key="frame" x="0.0" y="196" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="4oZ-Lc-cpg" kind="show" identifier="testSegue" id="tjA-Av-Avz"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fXl-Dl-XLp">
+                                <rect key="frame" x="123" y="148" width="247" height="29"/>
+                                <segments>
+                                    <segment title="Purple"/>
+                                    <segment title="Blue"/>
+                                    <segment title="Green"/>
+                                    <segment title="Red"/>
+                                    <segment title="Orange"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Name" id="93X-vw-75j"/>
+                    <navigationItem key="navigationItem" title="Hey! Who are you?" id="93X-vw-75j"/>
                     <connections>
                         <outlet property="optionSelector" destination="fXl-Dl-XLp" id="SU4-IG-gTo"/>
-                        <outlet property="outputLabel" destination="eFP-gL-W5Q" id="0eW-21-nV4"/>
                         <outlet property="textField" destination="ZNd-Mg-NgC" id="2vd-dK-x2Y"/>
                     </connections>
                 </viewController>

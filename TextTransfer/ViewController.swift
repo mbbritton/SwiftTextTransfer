@@ -8,17 +8,11 @@ class ViewController: UIViewController {
     
     var color : String!
     
-    @IBAction func updateButton(sender : AnyObject){
-        outputLabel.text =  "Your name is: " + textField.text!
-        textField.resignFirstResponder()
-        
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //This exists to pass data from one controller to another
         if (segue.identifier == "testSegue") {
             let svc = segue.destinationViewController as? ViewControllerTwo
-            svc?.toPass = textField.text
+            svc?.name = textField.text
             svc?.color = chooseColor()
         }
     }
@@ -30,13 +24,18 @@ class ViewController: UIViewController {
     }
     
     func chooseColor() -> String {
-        
         switch optionSelector.selectedSegmentIndex
         {
         case 0:
             return "purple"
         case 1:
             return "blue"
+        case 2:
+            return "green"
+        case 3:
+            return "red"
+        case 4:
+            return "orange"
         default:
             break;
         }
